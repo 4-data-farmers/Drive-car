@@ -494,72 +494,64 @@
         let randomSoh = 40 + parseInt((Math.random()*60).toFixed(0) - 0);
         let randomCarSpeed = 30 + parseInt((Math.random() * 50 ).toFixed(0) - 0);
         carnumber = carnumber + 1;
-        ajax({
-            type:"get",
-            url:"http://restapi.amap.com/v3/direction/driving?key=c795227ad494b3501ca73798dc3f6108&origin="+LngsUp[randomUpIndex] + "," + LatsUp[randomUpIndex] + "" +"&destination=119.309608,26.102557&originid=&destinationid=&extensions=base&strategy=2&waypoints=&avoidpolygons=&avoidroad=",
-            dataType:"json",
-            async: false,
-            success:function(responseData){
-                var re = "";
-                {#console.log(responseData)#}
-                var steps = responseData.route.paths[0].steps;
-                for (let i = 0; i < steps.length; i++) {
-                    var points = steps[i].polyline.toString().split(";");
-                    for (let j = 0; j < points.length; j++) {
-                        var tmp = points[j].split(",");
-                        for (let k = 0; k < tmp.length; k++) {
-                            tmp[k] = parseFloat(tmp[k]);
+
+
+        if(carnumber < 10) {
+            ajax({
+                type: "get",
+                url: "http://restapi.amap.com/v3/direction/driving?key=c795227ad494b3501ca73798dc3f6108&origin=" + LngsUp[randomUpIndex] + "," + LatsUp[randomUpIndex] + "" + "&destination=119.309608,26.102557&originid=&destinationid=&extensions=base&strategy=2&waypoints=&avoidpolygons=&avoidroad=",
+                dataType: "json",
+                async: false,
+                success: function (responseData) {
+                    var re = "";
+                    {#console.log(responseData)#}
+                    var steps = responseData.route.paths[0].steps;
+                    for (let i = 0; i < steps.length; i++) {
+                        var points = steps[i].polyline.toString().split(";");
+                        for (let j = 0; j < points.length; j++) {
+                            var tmp = points[j].split(",");
+                            for (let k = 0; k < tmp.length; k++) {
+                                tmp[k] = parseFloat(tmp[k]);
+                            }
+                            lineArr3.push(tmp);
                         }
-                        lineArr3.push(tmp);
+                        re += steps[i].polyline;
                     }
-                    re += steps[i].polyline;
-                }
-                var polylineUp = new AMap.Polyline({
-                    map: map,
-                    path: lineArr3,
-                    {#路线是更改这里的#}
-                    showDir:true,
-                    strokeColor: "#28F",
-                    {#线颜色#}
-                    strokeOpacity: 0.5,
-                    {#线透明度#}
-                    strokeWeight: 6,
-                    {#线宽#}
-                    {#// strokeStyle: "solid"  //线样式#}
-                });
+                    var polylineUp = new AMap.Polyline({
+                        map: map,
+                        path: lineArr3,
+                        {#路线是更改这里的#}
+                        showDir: true,
+                        strokeColor: "#28F",
+                        {#线颜色#}
+                        strokeOpacity: 0.5,
+                        {#线透明度#}
+                        strokeWeight: 6,
+                        {#线宽#}
+                        {#// strokeStyle: "solid"  //线样式#}
+                    });
 
 
-                marker3 = new AMap.Marker({
-                map: map,
-                position: [LngsUp[randomUpIndex],LatsUp[randomUpIndex]],
-                icon: imgPaths[randomImgPathIndex],
-                offset: new AMap.Pixel(-26, -13),
-                autoRotation: true,
-                angle:-90
-                });
-                if(carnumber > 0 && carnumber < 2){
-                    marker3.setTitle("车速:" + randomCarSpeed + "\n" + "SOC:" + randomSoc + "\n"
-                    + "SOH:" + randomSoh + "\n" + "车辆编号:" + '010' + carnumber);
-                    $(function(){
-                        $('#car_messages').html("车辆编号: " + '010' + carnumber + " 车速: " + randomCarSpeed  + " SOC: " + randomSoc + " SOH: " + randomSoh);
-                    })
-                }
-                if(carnumber > 1 && carnumber < 9){
-                    marker3.setTitle("车速:" + randomCarSpeed + "\n" + "SOC:" + randomSoc + "\n"
-                    + "SOH:" + randomSoh + "\n" + "车辆编号:" + '010' + carnumber);
-                    $(function(){
-                        $('#car_messages').append("车辆编号: " + '010' + carnumber + " 车速: " + randomCarSpeed  + " SOC: " + randomSoc + " SOH: " + randomSoh);
-                    })
-                }
-
-                marker3.moveAlong(lineArr3, randomCarSpeed);
+                    marker3 = new AMap.Marker({
+                        map: map,
+                        position: [LngsUp[randomUpIndex], LatsUp[randomUpIndex]],
+                        icon: imgPaths[randomImgPathIndex],
+                        offset: new AMap.Pixel(-26, -13),
+                        autoRotation: true,
+                        angle: -90
+                    });
+                    if (carnumber < 10) {
+                        $(function () {
+                            $('#car_messages').append("车辆编号: " + '010' + carnumber + " 车速: " + randomCarSpeed + " SOC: " + randomSoc + " SOH: " + randomSoh);
+                        })
+                        marker3.moveAlong(lineArr3, randomCarSpeed);
+                    }
 
                 }
 
 
-
-        });
-
+            });
+        }
     }
     function reduceNum(){
         let randomToReduce = (Math.random()*yibiaooption.series[0].data[0].value).toFixed(0) - 0;
@@ -664,7 +656,7 @@
 
 </script>
 
-<div id="car_messages" style="height: 15%;width: 22%;background-color: yellow;float: right">
+<div id="car_messages" style="height: 15%;width: 19%;background-color: yellow;float: right;margin-right: 1.5%;overflow-y:scroll;">
 
 
 </div>
