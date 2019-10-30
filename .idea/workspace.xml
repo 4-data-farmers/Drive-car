@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6cfc91a-2b3b-422a-af89-5df9cdba7978" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDmap/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDmap/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDmap/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDmap/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDmap/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDmap/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDmap/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/.idea/GDmap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/distance.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/car1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/end.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon-log.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery-1.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled4/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled4/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled4/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled4/wsgi.py" beforeDir="false" />
-    </list>
+    <list default="true" id="e6cfc91a-2b3b-422a-af89-5df9cdba7978" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +12,60 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/untitled4/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2052">
+              <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="556" column="17" selection-start-line="556" selection-start-column="17" selection-end-line="556" selection-end-column="17" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#3831#4408#0#HTML" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#4914#6342#0#HTML" />
+                <element signature="n#script#12;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/untitled4/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#633#665#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDmap/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,7 +95,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -93,25 +108,24 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-28" />
-    <option name="y" value="1" />
-    <option name="width" value="1934" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1935" />
     <option name="height" value="525" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
   <component name="RecentsManager">
@@ -140,14 +154,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="untitled4.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Webtest\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="" />
+      <option name="host" value="127.0.0.1" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -167,17 +181,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570610436404</updated>
-      <workItem from="1572420481003" duration="64000" />
+      <workItem from="1572420505311" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64000" />
+    <option name="totallyTimeSpent" value="6000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-22" y="1" width="1547" height="420" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2680965" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26863667" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -205,6 +219,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/untitled4/__init__.py">
@@ -254,7 +271,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="200">
           <caret line="556" column="17" selection-start-line="556" selection-start-column="17" selection-end-line="556" selection-end-column="17" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
