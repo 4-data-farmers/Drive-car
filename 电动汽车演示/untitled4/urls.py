@@ -19,6 +19,6 @@ from GDmap.views import index1,logins
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index1),
+    path('index/', index1,name='主界面'),
     path('login/', logins),
 ]

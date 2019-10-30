@@ -1,33 +1,46 @@
+{% load static %}
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>电动汽车项目仿真系统</title>
-    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" type="text/css">
     <style>
-      #backimage{
-        background-image: url("img/background.jpg");
-
-        position:absolute;
-        left:0px;
-        top:0px;
-        width:100%;
-        height:100%;
-        opacity: 1;
-        overflow: hidden;
+      #backimage {
+          background-image: url("../static/img/background.jpg");
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+          overflow: hidden;
+      }
+      #Headtext{
+          position:absolute;
+          left:42%;
+          top:30%;
+          font-size:30px;
+          font-family:"宋体";
+          color: whitesmoke;
+          font-weight: 800;
       }
     </style>
+
   </head>
   <body>
     <!-- 背景-->
-   	<div id="backimage" ></div>
-   
-
+         <div id="backimage" ></div>
+    <!--   标题-->
+         <span id="Headtext" >电动汽车项目仿真系统</span>
     <!-- 登陆区-->
     <div id="Logindiv">
-          <a href="index.html" style="position:absolute;width:320px;height:40px;left:120px;top:155px;height:20px;color:black;color:#000088;">
-          <font size="24px" color="white" face="宋体"><strong><em>进入电动汽车仿真系统--></em></strong></font></a>
+        <form action="" method="POST">
+            {% csrf_token %}
+        <input type="text" name="username" placeholder="用户名" style="padding-left: 10px;position:absolute;width:320px;height:35px;left:40%;top:45%;border-radius:5px;border-right:1px ;border-bottom:1px;outline:none;" />
+        <input type="password" name="username" placeholder="密码" style="padding-left: 10px;position:absolute;width:320px;height:35px;left:40%;top: 60%;border-radius:5px;border-right:1px;border-bottom:1px;outline:none;"/>
+        <input type="submit"  style="position:absolute;width:50px;height:35px;left:40%;top: 75%;border-radius:6px;border:1px;opacity:0.8;outline:none;" value="登入">
+        </form>
     </div>
 
   </body>
 </html>
-
