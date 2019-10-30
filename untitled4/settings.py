@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'untitled4.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
+        'NAME': 'chargingcar',  # 数据库名
+        'USER': 'root',  # 账号
+        'PASSWORD': '2981407834',  # 密码
+        'HOST': '127.0.0.1',  # mysql服务器的域名或ip
+        'PORT': '3360',  #mysql端口号，默认为3306'),
     }
 }
 
