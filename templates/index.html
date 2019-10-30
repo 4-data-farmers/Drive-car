@@ -545,7 +545,13 @@
                             $('#car_messages').append("车辆编号: " + '010' + carnumber + " 车速: " + randomCarSpeed + " SOC: " + randomSoc + " SOH: " + randomSoh);
                         })
                         marker3.moveAlong(lineArr3, randomCarSpeed);
+
+
                     }
+                    marker3.on('movealong', function (e) {
+                        map.remove(marker3);
+                        map.remove(polylineUp);
+                    })
 
                 }
 
